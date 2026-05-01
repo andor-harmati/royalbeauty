@@ -15,16 +15,16 @@
         colors: {
           "surface-container-lowest": "#ffffff", "surface-variant": "#e2e2e2", "on-surface": "#1a1c1c",
           "inverse-surface": "#2f3131", "on-background": "#1a1c1c", "surface": "#f9f9f9",
-          "primary-fixed": "#ffe088", "surface-bright": "#f9f9f9", "outline-variant": "#d0c5af",
-          "inverse-primary": "#e9c349", "error-container": "#ffdad6", "on-primary": "#ffffff",
-          "on-primary-container": "#554300", "on-surface-variant": "#4d4635", "on-secondary": "#ffffff",
-          "secondary": "#5f5e5e", "surface-tint": "#735c00", "tertiary": "#5d5f5f",
+          "primary-fixed": "#d8f3dc", "surface-bright": "#f9f9f9", "outline-variant": "#d0c5af",
+          "inverse-primary": "#95d5b2", "error-container": "#ffdad6", "on-primary": "#ffffff",
+          "on-primary-container": "#1b4332", "on-surface-variant": "#3a5a40", "on-secondary": "#ffffff",
+          "secondary": "#5f5e5e", "surface-tint": "#2d6a4f", "tertiary": "#5d5f5f",
           "surface-container": "#eeeeee", "surface-container-highest": "#e2e2e2", "error": "#ba1a1a",
-          "secondary-fixed": "#e5e2e1", "primary": "#735c00", "tertiary-fixed": "#e2e2e2",
-          "secondary-container": "#e2dfde", "primary-container": "#d4af37",
+          "secondary-fixed": "#e5e2e1", "primary": "#2d6a4f", "tertiary-fixed": "#e2e2e2",
+          "secondary-container": "#e2dfde", "primary-container": "#52b788",
           "on-secondary-container": "#636262", "inverse-on-surface": "#f0f1f1",
           "outline": "#7f7663", "surface-dim": "#dadada", "background": "#f9f9f9",
-          "on-tertiary": "#ffffff", "on-error": "#ffffff", "primary-fixed-dim": "#e9c349",
+          "on-tertiary": "#ffffff", "on-error": "#ffffff", "primary-fixed-dim": "#95d5b2",
           "surface-container-high": "#e8e8e8", "surface-container-low": "#f3f3f4"
         },
         borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
@@ -61,7 +61,7 @@
     <nav class="hidden md:flex gap-10 font-serif tracking-tight">
       <a class="text-stone-500 hover:text-stone-900 transition-colors" href="index.html">Kezdőlap</a>
       <a class="text-stone-500 hover:text-stone-900 transition-colors" href="szolgaltatasok.html">Szolgáltatások</a>
-      <a class="text-amber-600 border-b border-amber-600 pb-1" href="rolunk.html">Rólunk</a>
+      <a class="text-emerald-700 border-b border-emerald-700 pb-1" href="rolunk.html">Rólunk</a>
       <a class="text-stone-500 hover:text-stone-900 transition-colors" href="galeria.html">Galéria</a>
     </nav>
     <a href="#kapcsolat" class="bg-on-surface text-surface px-8 py-3 font-label-caps hover:opacity-80 transition-all active:opacity-70">
@@ -193,13 +193,18 @@
         </form>
       </div>
 
-      <!-- Map placeholder -->
-      <div class="h-[600px] bg-surface-container-high rounded-sm overflow-hidden shadow-inner relative group">
-        <img alt="Térkép – Budapest, Szent István tér" class="w-full h-full object-cover filter brightness-90 grayscale-[30%] group-hover:grayscale-0 transition-all duration-700"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm3wk3HebmZ4LPskL8_e2arJB3_IuE2GYdQmOGg8DwC8qAfV45trnTZ_av20zDfCWulcrU4pF80Bn2EoURhdewgjaZA9MLeKMK-at22GI2AMAibJSbVhxdfrFCdOaXLUpQZDScNrxWlj0sOFLSzAGa6Pkn78kyikwSd9OQ1R0fjMaPIUJeQ-BnrnJouupvkuxIzkX8aU5EfyFA1MllmZZ8EUl8jYFHuhlS_UP5WKZ-OmMGtnw0ZRPd4oiqiMjHm-I5ygKQAtQXWVgA"/>
-        <div class="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm px-4 py-2 rounded text-sm font-label-caps text-stone-800">
-          2122 Dunakeszi, Szent István utca 30.
-        </div>
+      <!-- Google Maps embed -->
+      <div class="h-[600px] rounded-sm overflow-hidden shadow-inner">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2691.0!2d19.1368!3d47.6368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zSHVuZ2FyeSwgMjEyMiBEdW5ha2Vzemmsg1N6ZW50IElzdHbDoW4gdXRjYSAzMA!5e0!3m2!1sen!2shu!4v1"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Royal Beauty Dunakeszi – 2122 Dunakeszi, Szent István utca 30.">
+        </iframe>
       </div>
     </div>
   </section>
@@ -210,10 +215,10 @@
   <div class="max-w-[1280px] mx-auto py-20 px-16 flex flex-col md:flex-row justify-between items-center gap-8">
     <div class="text-xl font-light tracking-widest text-stone-900 uppercase font-serif">Royal Beauty</div>
     <div class="flex flex-col md:flex-row gap-8 items-center font-serif text-sm tracking-wide uppercase">
-      <a class="text-stone-400 hover:text-amber-600 transition-colors" href="#">Adatkezelési Tájékoztató</a>
-      <a class="text-stone-400 hover:text-amber-600 transition-colors" href="#">Általános Szerződési Feltételek</a>
-      <a class="text-stone-400 hover:text-amber-600 transition-colors" href="#kapcsolat">Kapcsolat</a>
-      <a class="text-stone-400 hover:text-amber-600 transition-colors" href="https://www.facebook.com/royalbeautydunakeszi" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a class="text-stone-400 hover:text-emerald-700 transition-colors" href="#">Adatkezelési Tájékoztató</a>
+      <a class="text-stone-400 hover:text-emerald-700 transition-colors" href="#">Általános Szerződési Feltételek</a>
+      <a class="text-stone-400 hover:text-emerald-700 transition-colors" href="#kapcsolat">Kapcsolat</a>
+      <a class="text-stone-400 hover:text-emerald-700 transition-colors" href="https://www.facebook.com/royalbeautydunakeszi" target="_blank" rel="noopener noreferrer">Facebook</a>
     </div>
     <p class="text-stone-400 font-serif text-sm tracking-wide uppercase text-center md:text-right">
       © 2024 Royal Beauty Dunakeszi. Minden jog fenntartva.
