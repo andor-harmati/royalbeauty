@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="light" lang="hu">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kezdőlap – Aura Esztétika</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "surface-container-lowest": "#ffffff",
+          "surface-variant": "#e2e2e2",
+          "on-surface": "#1a1c1c",
+          "inverse-surface": "#2f3131",
+          "on-background": "#1a1c1c",
+          "surface": "#f9f9f9",
+          "tertiary-container": "#b2b3b3",
+          "primary-fixed": "#ffe088",
+          "surface-bright": "#f9f9f9",
+          "outline-variant": "#d0c5af",
+          "on-primary-fixed": "#241a00",
+          "inverse-primary": "#e9c349",
+          "error-container": "#ffdad6",
+          "on-primary": "#ffffff",
+          "on-primary-container": "#554300",
+          "on-surface-variant": "#4d4635",
+          "on-secondary": "#ffffff",
+          "secondary": "#5f5e5e",
+          "surface-tint": "#735c00",
+          "tertiary": "#5d5f5f",
+          "surface-container": "#eeeeee",
+          "surface-container-highest": "#e2e2e2",
+          "error": "#ba1a1a",
+          "secondary-fixed": "#e5e2e1",
+          "primary": "#735c00",
+          "tertiary-fixed": "#e2e2e2",
+          "secondary-container": "#e2dfde",
+          "primary-container": "#d4af37",
+          "on-secondary-container": "#636262",
+          "inverse-on-surface": "#f0f1f1",
+          "outline": "#7f7663",
+          "surface-dim": "#dadada",
+          "background": "#f9f9f9",
+          "on-tertiary": "#ffffff",
+          "on-error": "#ffffff",
+          "primary-fixed-dim": "#e9c349",
+          "surface-container-high": "#e8e8e8",
+          "surface-container-low": "#f3f3f4"
+        },
+        borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        spacing: { "margin-edge": "64px", "section-padding": "120px", "base": "8px", "gutter": "24px", "container-max": "1280px" },
+        fontFamily: {
+          "display-xl": ["Noto Serif"], "body-md": ["Inter"], "headline-md": ["Noto Serif"],
+          "headline-lg": ["Noto Serif"], "body-sm": ["Inter"], "headline-sm": ["Noto Serif"],
+          "label-caps": ["Inter"], "body-lg": ["Inter"]
+        },
+        fontSize: {
+          "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+          "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+          "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+          "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+          "body-sm": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}],
+          "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+          "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.15em", "fontWeight": "600"}],
+          "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+  .glassmorphism-card {
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 20px 50px rgba(26,26,26,0.05);
+  }
+</style>
+</head>
+<body class="bg-background font-body-md text-on-background selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 border-b border-white/20 bg-white/60 backdrop-blur-2xl shadow-[0_20px_50px_rgba(26,26,26,0.05)]">
+  <div class="flex justify-between items-center max-w-[1280px] mx-auto px-16 h-24">
+    <a href="index.html" class="text-2xl font-light tracking-[0.2em] text-stone-900 uppercase font-serif">Aura Esztétika</a>
+    <div class="hidden md:flex items-center gap-12 font-serif tracking-tight">
+      <a class="text-amber-600 border-b border-amber-600 pb-1" href="index.html">Kezdőlap</a>
+      <a class="text-stone-500 hover:text-stone-900 transition-colors" href="szolgaltatasok.html">Szolgáltatások</a>
+      <a class="text-stone-500 hover:text-stone-900 transition-colors" href="rolunk.html">Rólunk</a>
+      <a class="text-stone-500 hover:text-stone-900 transition-colors" href="galeria.html">Galéria</a>
+    </div>
+    <a href="rolunk.html#kapcsolat" class="bg-stone-900 text-white px-8 py-3 font-label-caps uppercase transition-all hover:opacity-80 active:opacity-70">
+      Időpontfoglalás
+    </a>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQHuW5yVulBk3bNMoH56jszDlqYCnthicQ0AdiZ7yocedGLtEFw0_vJ1NLdSIWM60KFge7hZLBS1s6mjZ9WhooE8CeU7JaUDGvAtwM32N2ChORofekLwhm_jOk65esTZ_gzkmgAZ_rVhfNlbIj5GBLi5-CqcbxJKqQIDowVvHKd9Fe31zLv5qvMplLIqB-zs2-bdvjBESqte405GAhjpRdIpA_EywKR_PYg4an76cOvvXw87g8FZP3CtkjJBSdm7DoEs56Glo3C0Uv" alt="Aura Esztétika spa belső"/>
+      <div class="absolute inset-0 bg-gradient-to-r from-white via-white/40 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-[1280px] mx-auto px-16 w-full grid grid-cols-12 gap-gutter">
+      <div class="col-span-12 md:col-span-7">
+        <span class="font-label-caps text-primary mb-6 block">Üdvözöljük a nyugalom szigetén</span>
+        <h1 class="font-display-xl text-display-xl text-on-surface mb-8">
+          Az öngondoskodás <br/> <span class="text-primary italic">új dimenziója</span>
+        </h1>
+        <p class="font-body-lg text-body-lg text-secondary max-w-xl mb-12">
+          Klinikai precizitás és spa élmény találkozása. Prémium esztétikai kezeléseinkkel segítünk felfedezni valódi szépségét egy exkluzív, modern környezetben.
+        </p>
+        <div class="flex gap-6 items-center">
+          <a href="szolgaltatasok.html" class="bg-stone-900 text-white px-10 py-5 font-label-caps uppercase hover:bg-stone-800 transition-all shadow-xl">
+            Fedezze fel szolgáltatásainkat
+          </a>
+          <a href="rolunk.html" class="border border-primary-container text-primary px-10 py-5 font-label-caps uppercase hover:bg-primary-container/10 transition-all">
+            Rólunk
+          </a>
+        </div>
+      </div>
+      <!-- Floating Glass Card -->
+      <div class="col-span-5 hidden lg:flex items-center justify-center">
+        <div class="glassmorphism-card w-full p-12 aspect-square flex flex-col justify-center items-start">
+          <div class="w-12 h-1 bg-primary mb-8"></div>
+          <h3 class="font-headline-sm text-headline-sm mb-4">Aura Signature</h3>
+          <p class="font-body-md text-body-md text-secondary mb-8 italic">"A szépség ott kezdődik, amikor eldöntöd, hogy önmagad leszel."</p>
+          <div class="flex items-center gap-4">
+            <span class="material-symbols-outlined text-primary">verified_user</span>
+            <span class="font-label-caps text-on-surface">Minősített szakértők</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-background to-transparent"></div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-section-padding bg-surface-container-lowest">
+    <div class="max-w-[1280px] mx-auto px-16">
+      <div class="text-center mb-24">
+        <h2 class="font-headline-lg text-headline-lg mb-6">Kiemelt Kezeléseink</h2>
+        <div class="w-24 h-[2px] bg-primary mx-auto mb-8"></div>
+        <p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">
+          A legmodernebb technológiákat ötvözzük a személyre szabott gondoskodással a látványos és tartós eredményekért.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <!-- Service 1 -->
+        <div class="group relative overflow-hidden bg-white shadow-sm">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlylJh0Ids6gpyZ4OGfuOdOk5-07e9oc-fbXBXjSwssf2UsSQiC6_tJeiKxXe_vVgK63FO30HNKopehxlnaId_CPq_GQIqawQ73Rdok8Rol_0vYhSX358SYaFZNPTIfXzFUhThHfFUeqIXEzq0Ra3p2PqdDLfzs3XYCG-6HRgE-aFgnJcPvVPHpAXcIXEcoyia896U0x87lK-xtKd-G3_9rAN61ClaO8E8z_AEj0cKW3QB7zZo96bcrghu6vkcGTKyPSmL2lfCJfjF"
+              alt="Elysion Pro lézeres szőrtelenítés"/>
+          </div>
+          <div class="p-10 border-t border-stone-100">
+            <span class="font-label-caps text-primary mb-4 block">Lézeres Szőrtelenítés</span>
+            <h3 class="font-headline-sm text-headline-sm mb-4">Elysion Pro</h3>
+            <p class="font-body-md text-body-md text-secondary mb-8">
+              Fájdalommentes, nagy teljesítményű diódalézeres technológia, amely minden bőrtípuson hatékony és tartós eredményt biztosít az év bármely szakában.
+            </p>
+            <a class="inline-flex items-center gap-2 font-label-caps text-on-surface group-hover:text-primary transition-colors" href="szolgaltatasok.html">
+              Részletek <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="group relative overflow-hidden bg-white shadow-sm">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6cLBAdtUQ-zc5sBzXay_YqFtKiy1sesQlmbmaPwxiTMTwvE0tASk6tX1oXzELSGzZVMH_gdGvUHgYitrK6f8A_ngFlKeCYoSmhoWOBcrN43oTMCGSXrpqhkcSk9bJsK2-UBTUUaNRv8LSYFWz8Mkbpzo_ruyso9AyK-FbL3B4N4iXi9QNfDoOduXQrN-M5i0ZeApnzDAXnqDJGBMzuw9Wsmm3ya3sAITLEWrs1KYGTN5rKxrUiDs8bs7-HWxDbuYmtCrg-oIlFmS8"
+              alt="Lipolézeres zsírbontás"/>
+          </div>
+          <div class="p-10 border-t border-stone-100">
+            <span class="font-label-caps text-primary mb-4 block">Alakformálás</span>
+            <h3 class="font-headline-sm text-headline-sm mb-4">Lipolézeres zsírbontás</h3>
+            <p class="font-body-md text-body-md text-secondary mb-8">
+              Forradalmi, non-invazív eljárás a célzott zsírbontáshoz. Alakítsa testét kényelmesen, felépülési idő nélkül a legújabb fénytechnológiával.
+            </p>
+            <a class="inline-flex items-center gap-2 font-label-caps text-on-surface group-hover:text-primary transition-colors" href="szolgaltatasok.html">
+              Részletek <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-section-padding relative overflow-hidden bg-stone-900 text-white">
+    <div class="max-w-[1280px] mx-auto px-16 text-center relative z-10">
+      <h2 class="font-headline-lg text-headline-lg mb-8">Készen áll a megújulásra?</h2>
+      <p class="font-body-lg text-body-lg text-stone-400 mb-12 max-w-xl mx-auto">
+        Kérjen konzultációt szakértőinktől és találjuk meg együtt az Ön számára legmegfelelőbb kezelési tervet.
+      </p>
+      <a href="rolunk.html#kapcsolat" class="inline-block bg-primary text-on-primary px-12 py-5 font-label-caps uppercase hover:brightness-110 transition-all tracking-widest">
+        Időpontfoglalás most
+      </a>
+    </div>
+    <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-white/5 to-transparent skew-x-12 translate-x-1/2"></div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full border-t border-stone-200 bg-stone-50">
+  <div class="max-w-[1280px] mx-auto py-20 px-16 flex flex-col md:flex-row justify-between items-center gap-8">
+    <div class="text-xl font-light tracking-widest text-stone-900 uppercase font-serif">Aura Esztétika</div>
+    <div class="flex flex-col md:flex-row gap-8 items-center font-serif text-sm tracking-wide uppercase">
+      <a class="text-stone-400 hover:text-amber-600 transition-colors" href="#">Adatkezelési Tájékoztató</a>
+      <a class="text-stone-400 hover:text-amber-600 transition-colors" href="#">Általános Szerződési Feltételek</a>
+      <a class="text-stone-400 hover:text-amber-600 transition-colors" href="rolunk.html#kapcsolat">Kapcsolat</a>
+    </div>
+    <p class="text-stone-400 font-serif text-sm tracking-wide uppercase text-center md:text-right">
+      © 2024 Aura Esztétika – Prémium Szépségklinika. Minden jog fenntartva.
+    </p>
+  </div>
+</footer>
+</body>
+</html>
